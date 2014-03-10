@@ -8,6 +8,8 @@
 // Allows the use of rem-calc() or lower-bound() in your settings
 @import "foundation/functions";
 
+$header-font-color: #c36017;
+
 // $experimental: true;
 
 // The default font-size is set to 100% of the browser style sheet (usually 16px)
@@ -37,7 +39,7 @@
 
 // We use these to control various global styles
 // $body-bg: #fff;
-// $body-font-color: #222;
+$body-font-color: scale-color($header-font-color, $lightness: -45%);
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
@@ -51,7 +53,7 @@
 // $default-float: left;
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
+$primary-color: #c36017;
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
@@ -116,7 +118,6 @@
 $header-font-family: "fengardo_neueregular", "Helvetica", "Arial", "sans-serif";
 // $header-font-weight: 300;
 // $header-font-style: normal;
-// $header-font-color: #222;
 // $header-line-height: 1.4;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;
@@ -158,9 +159,9 @@ $h5-font-size: rem-calc(14);
 // $code-font-weight: bold;
 
 // We use these to style anchors
-// $anchor-text-decoration: none;
-// $anchor-font-color: $primary-color;
-// $anchor-font-color-hover: scale-color($primary-color, $lightness: -14%);
+$anchor-text-decoration: underline;
+$anchor-font-color: scale-color($primary-color, $lightness: 14%);
+$anchor-font-color-hover: scale-color($primary-color, $lightness: -34%);
 
 // We use these to style the <hr> element
 // $hr-border-width: 1px;
